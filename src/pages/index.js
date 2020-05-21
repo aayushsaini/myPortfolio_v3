@@ -1,20 +1,23 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import { Link } from 'gatsby'
+import Nav from '../components/nav'
+import Featured from '../components/featured'
+import Home from '../components/home'
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Footer from "../components/footer"
+import SEO from "../components/seo" 
+import './index.css'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Nav/>
+    <Featured/>
+    <h1 className="mywork">My Feed<span style={{color:'#F18A77', fontWeight:'600'}}> .</span></h1>
+    <Home/>
+    <Link to='/blog' className='viewmore'>View More</Link>
+    <Footer/>
+    <center><h5 className="footer__text">Designed & Developed by <a className="footer__link" href="https://www.linkedin.com/in/aayush-saini/">Aayush Saini</a></h5></center>
   </Layout>
 )
 
