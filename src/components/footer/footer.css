@@ -16,7 +16,7 @@
 
 .footer_:before{
     content: '';
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     position: absolute;
     top: 0;
     right: 0;
