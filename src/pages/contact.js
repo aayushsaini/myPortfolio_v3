@@ -29,7 +29,7 @@ const Contact = () => (
                             <input type='text' name='email'/>
                         </div>
                         <div className='field'>
-                            <label>Message</label>
+                            <label>Message/Query</label>
                             <textarea name='message' rows='6'></textarea>
                         </div>
                         <div className='submit'>

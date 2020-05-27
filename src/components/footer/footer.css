@@ -1,4 +1,5 @@
 .footer_{
+    background-image: url('../../images/footer.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,4 +12,19 @@
     margin-right: -50vw;
     z-index: -1;
     transform: translateY(-390px);
+}
+
+.footer_:before{
+    content: '';
+    transform: translateY(-5px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -11px;
+    left: 0;
+    background-image: linear-gradient(
+        to top,
+        rgba(10,10,10,0.2) 0%,
+        rgba(10,10,10,0.3) 60%,
+        rgba(10,10,10,1) 100%);
 }

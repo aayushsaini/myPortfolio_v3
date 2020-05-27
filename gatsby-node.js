@@ -272,43 +272,7 @@ exports.createPages = ({ actions, graphql}) => {
     
         });
 
-        //create Cat-6 page fpr all blog with pagination/
-        const getCat6 = makeRequest(graphql,`
-        {
-            allContentfulBlog(
-                sort: { fields: [createdAt], order: DESC }
-                filter: {
-                    node_locale: {eq: "en-US"}
-                    category: {elemMatch: {title: {eq:"About me"}}}
-                },)
-                {
-                    edges{
-                        node{
-                            id
-                            slug
-                        }
-                    }
-                }
-        }
-        `).then(result => {
-            const blogs = result.data.allContentfulBlog.edges
-            const blogsPerPage = 7
-            const numPages = Math.ceil(blogs.length / blogsPerPage)
-            
-            Array.from({ length: numPages }).forEach((_, i) =>{
-                createPage({
-                    path: i === 0? `/category/about-me` : `/category/about-me/${i+1}`,
-                    component: path.resolve("./src/templates/cat6.js"),
-                    context:{
-                        limit: blogsPerPage,
-                        skip: i*blogsPerPage,
-                        numPages,
-                        currentPage: i + 1
-                    },
-                })
-            })
-    
-        });
+        
 
     return Promise.all([
         getBlog,
@@ -317,7 +281,6 @@ exports.createPages = ({ actions, graphql}) => {
         getCat2,
         getCat3,
         getCat4,
-        getCat5,
-        getCat6
+        getCat5
     ])
 };

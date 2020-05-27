@@ -31,7 +31,6 @@ const cat3 = (props) => {
                         <Link to='/category/ui-ux-design' className={window.location.href.indexOf('category/ui-ux-design') > 0 ? 'archive__nav--link selected' : 'archive__nav--link'}>UI/UX</Link>
                         <Link to='/category/others' className={window.location.href.indexOf('category/others') > 0 ? 'archive__nav--link selected' : 'archive__nav--link'}>Others</Link>
                         <Link to='/category/life' className={window.location.href.indexOf('category/life') > 0 ? 'archive__nav--link selected' : 'archive__nav--link'}>Life</Link>
-                        <Link to='/category/about-me' className={window.location.href.indexOf('/category/about-me') > 0 ? 'archive__nav--link selected' : 'archive__nav--link'}>About me</Link>
                     </div>
                 </div>
             </header>
