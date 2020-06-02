@@ -113,6 +113,13 @@
         display: block;
         margin: 60px auto;
     }
+    
+    .left{
+        float: none;
+        width: 90%;
+        display: block;
+        margin: 60px auto;
+    }
 
     .blog__content blockquote p{
         display: block;
