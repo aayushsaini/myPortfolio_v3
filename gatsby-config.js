@@ -6,8 +6,8 @@ require('dotenv').config();
 module.exports = {
   siteMetadata: {
     title: `AAYUSH SAINI`,
-    description: `This website is a portfolio and a blog of Aayush Saini`,
-    author: `Aayush Saini`,
+    description: `This is my personal website. I upload my projects , thier details here and I also write blogs here occasionally`,
+    author: `@AayushSaini`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
