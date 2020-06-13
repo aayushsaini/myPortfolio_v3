@@ -25,6 +25,7 @@
     background-image: linear-gradient(
         to top,
         rgba(10,10,10,0.2) 0%,
-        rgba(10,10,10,0.3) 60%,
+        rgba(10,10,10,0.3) 30%,
+        rgba(10,10,10,0.31) 40%,
         rgba(10,10,10,1) 100%);
 }
