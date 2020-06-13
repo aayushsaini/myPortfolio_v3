@@ -16,9 +16,9 @@
 
 .footer_:before{
     content: '';
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 0;
     bottom: -11px;
     left: 0;
