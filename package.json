@@ -1,8 +1,8 @@
 {
-  "name": "aayush-saini",
+  "name": "gatsby-starter-default",
   "private": true,
   "description": "Website for Aayush's portfolio & blog",
-  "version": "3.0",
+  "version": "0.1.0",
   "author": "Aayush Saini <aayush.r98@gmail.com>",
   "dependencies": {
     "aos": "^3.0.0-beta.6",
